@@ -88,7 +88,7 @@ async function displayAlbums() {
             let folder = e.href.split("/").slice(-2)[0]
             // Get the metadata of the folder
            let a = await fetch(`/songs/${folder}/info.json`)
-          let response = await a.json().catch(() => ({}));; 
+          let response = await a.json(); 
             cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card">
             <div class="play">
                 <svg
@@ -206,4 +206,5 @@ async function main() {
 
 }
 main();
+
 
