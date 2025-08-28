@@ -82,7 +82,7 @@ async function displayAlbums() {
     let anchors = div.getElementsByTagName("a")
     let cardContainer = document.querySelector(".card-container")
     let array = Array.from(anchors)
-    for (let index = 0; index < array.length-1; index++) {
+    for (let index = 0; index < array.length; index++) {
         const e = array[index]; 
         if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").slice(-2)[0]
@@ -122,7 +122,7 @@ async function displayAlbums() {
 async function main() {
    await getSongs("songs/cs");
   playMusic(songs[0],true);
-  console.log(songs);
+ 
  await displayAlbums()
 
   play.addEventListener("click", () => {
@@ -206,5 +206,6 @@ async function main() {
 
 }
 main();
+
 
 
