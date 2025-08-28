@@ -1,6 +1,6 @@
 # Spotify Web App
 
-A simple web application built to interact with the Spotify API, allowing users to search for tracks, view playlists, or play music directly in the browser. Hosted on GitHub Pages at [https://nabawaseem.github.io/spotifyapp/](https://nabawaseem.github.io/spotifyapp/).
+A simple web application built to interact with the Spotify API, allowing users to search for tracks, view playlists, or play music directly in the browser. Hosted on GitHub Pages at [https://nabawaseem.github.io/spotifyapp/](https://nabawaseem.github.io/spotifyapp.github.io/).
 
 ## Features
 - Search for songs, artists, or albums using Spotify's Web API.
