@@ -14,13 +14,4 @@ A simple web application built to interact with the Spotify API, allowing users 
 - **Hosting**: GitHub Pages
 - (Optional) Add frameworks if used, e.g., React, Vue.js
 
-## Getting Started
 
-### Prerequisites
-- A Spotify Developer account and API credentials (Client ID and Secret) from [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).
-- A modern web browser.
-
-### Setup Instructions
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/NabaWaseem/spotifyapp.github.io.git
