@@ -16,7 +16,7 @@ function secondsToMinutesSeconds(seconds) {
 }
 async function getSongs(folder) {
   currfolder=folder
-  let a = await fetch(`http://127.0.0.1:3000//${folder}/`); // wait for the Response
+  let a = await  fetch(`/${folder}/`);// wait for the Response
   let response = await a.text(); // now convert to text
 
   let div = document.createElement("div");
@@ -206,3 +206,4 @@ async function main() {
 
 }
 main();
+
