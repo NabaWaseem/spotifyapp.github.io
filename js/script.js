@@ -44,7 +44,7 @@ async function getSongs(folder) {
                 </div >
                 <div class="playnow">
                 <span>Play Now</span>
-                <img class="invert" src="./images/play.svg">
+                <img class="invert" src="./images/play.svg" alt= "" >
               </div>
                 </li>`;
   }
@@ -112,7 +112,7 @@ async function displayAlbums() {
         e.addEventListener("click", async item => {
             console.log("Fetching Songs")
             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  
-            playMusic(songs[0],true)
+            playMusic(songs[0])
 
         })
     })
@@ -120,7 +120,7 @@ async function displayAlbums() {
   
     
 async function main() {
-   await getSongs("songs/cs");
+   await getSongs("songs/ncs");
   playMusic(songs[0],true);
  
  await displayAlbums()
@@ -158,7 +158,7 @@ async function main() {
     // Add an event listener to previous
     previous.addEventListener("click", () => {
         currentSong.pause()
-        // console.log("Previous clicked")
+       
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
         if ((index - 1) >= 0) {
             playMusic(songs[index - 1])
@@ -206,6 +206,7 @@ async function main() {
 
 }
 main();
+
 
 
 
