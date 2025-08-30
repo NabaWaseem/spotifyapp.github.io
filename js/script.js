@@ -1,4 +1,4 @@
-const BASE_PATH = `${window.location.origin}/spotifyapp.github.io`;
+const BASE_PATH = "https://nabawaseem.github.io/spotifyapp.github.io/"
 let songs;
 let currfolder;
 let currentSong = new Audio();
@@ -207,6 +207,7 @@ async function main() {
 
 }
 main();
+
 
 
 
