@@ -1,0 +1,105 @@
+{
+  "albums": [
+    {
+      "folder": "Sitaray Zameen par",
+      "path": "song/Sitaray Zameen par/",
+      "displayName": "Sitaray Zameen Par",
+      "description": "Part two",
+      "cover": "song/Sitaray Zameen par/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "Who rules the world",
+      "path": "song/Who rules the world/",
+      "displayName": "The Royal",
+      "description": "Indian short Series",
+      "cover": "song/Who rules the world/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "bas aik dhadak",
+      "path": "song/bas aik dhadak/",
+      "displayName": "Bas aik dharak",
+      "description": " A song of south indian movie",
+      "cover": "song/bas aik dhadak/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "coke studio",
+      "path": "song/coke studio/",
+      "displayName": "Jhol",
+      "description": "pakistan coke studio",
+      "cover": "song/coke studio/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "cs",
+      "path": "song/cs/",
+      "displayName": "Trending Songs",
+      "description": "Contain all songs that are Trending this Year",
+      "cover": "song/cs/cover.jpg",
+      "tracks": [
+        {
+          "file": "Bs aik dhadak - Copy.mp3",
+          "title": "Bs aik dhadak - Copy"
+        },
+        {
+          "file": "Good For Nothing - Copy.mp3",
+          "title": "Good For Nothing - Copy"
+        },
+        {
+          "file": "Humsafar - Copy.mp3",
+          "title": "Humsafar - Copy"
+        },
+        {
+          "file": "Pehla Tu Duja Tu.mp3",
+          "title": "Pehla Tu Duja Tu"
+        },
+        {
+          "file": "Preet re - Copy.mp3",
+          "title": "Preet re - Copy"
+        },
+        {
+          "file": "Tum ho Tu - Copy.mp3",
+          "title": "Tum ho Tu - Copy"
+        },
+        {
+          "file": "Who Rules The Worls.mp3",
+          "title": "Who Rules The Worls"
+        }
+      ]
+    },
+    {
+      "folder": "ncs",
+      "path": "song/ncs/",
+      "displayName": "Trending songs",
+      "description": "Here you can get all kind of WorldwideTrending songs ",
+      "cover": "song/ncs/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "phla tu",
+      "path": "song/phla tu/",
+      "displayName": "Son of Sardar 2",
+      "description": "Brigs more twist and drama this time",
+      "cover": "song/phla tu/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "preet re",
+      "path": "song/preet re/",
+      "displayName": "Preet re",
+      "description": "Dhadak movie song",
+      "cover": "song/preet re/cover.jpg",
+      "tracks": []
+    },
+    {
+      "folder": "saiyara movie 2025",
+      "path": "song/saiyara movie 2025/",
+      "displayName": "Saiyara (2025)",
+      "description": "Movie by YRF",
+      "cover": "song/saiyara movie 2025/cover.jpg",
+      "tracks": []
+    }
+  ]
+}
