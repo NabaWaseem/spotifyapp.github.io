@@ -108,6 +108,12 @@ async function main() {
     await getSongs(`song/${first}`);
     playMusic(songs[0], true);
   }
+  const defaultAlbum = data.albums.find(a => a.folder === "cs");
+
+  if (defaultAlbum) {
+    await getSongs(`song/${defaultAlbum.folder}`);
+    playMusic(songs[0], true);
+  }
   await displayAlbums();
 
   play.addEventListener("click", () => {
@@ -140,25 +146,25 @@ async function main() {
     document.querySelector(".close").addEventListener("click", () => {
         document.querySelector(".left").style.left = "-120%"
     })
-    // Add an event listener to previous
-    previous.addEventListener("click", () => {
-        currentSong.pause()
-        
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1])
-        }
-    })
+  // previous
+previous.addEventListener("click", () => {
+    currentSong.pause();
+    let currentTrack = decodeURIComponent(currentSong.src.split("/").slice(-1)[0]); 
+    let index = songs.indexOf(currentTrack);
+    if ((index - 1) >= 0) {
+        playMusic(songs[index - 1]);
+    }
+});
 
-    // Add an event listener to next
-    nextButton.addEventListener("click", () => {
-        currentSong.pause()
-     
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-        if ((index + 1) < songs.length) {
-            playMusic(songs[index + 1])
-        }
-    })
+// next
+nextButton.addEventListener("click", () => {
+    currentSong.pause();
+    let currentTrack = decodeURIComponent(currentSong.src.split("/").slice(-1)[0]);
+    let index = songs.indexOf(currentTrack);
+    if ((index + 1) < songs.length) {
+        playMusic(songs[index + 1]);
+    }
+});
         // Add an event to volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         
@@ -190,3 +196,4 @@ async function main() {
 
 }
 main();
+
